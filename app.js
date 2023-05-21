@@ -1,1 +1,3 @@
-console.log(2+2)
+function f() {
+    console.log("alex")
+}
