@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
 </head>
 <body>
-    <form class="forma">
+    <form class="form">
         <input type="text" placeholder="Enter your task, after enter task progress and pin the user." id="task">
         <select id='select1'>
             <option value="To Do">To Do</option>
@@ -17,14 +17,14 @@
             <option value="Done">Done</option>
         </select>
         <select id='select2'>
-            <option value="@all">Everyone</option>
+            <option value="Everyone">Everyone</option>
             <option value="Nikita Tsyvlin">Nikita Tsyvlin</option>
             <option value="Nikita Zhaldybin">Nikita Zhaldybin</option>
         </select>
         <button onclick="add()">Add</button>
     </form>
 
-    <table id="tasks">
+    <table id="table">
         <tr>
             <th>Task</th>
             <th>Progress</th>
@@ -34,7 +34,7 @@
         
     </table>
 <script src="plugin/constants.js"></script>
-<script src="plugin/addRecord.js"></script>
-<script src="plugin/titleVersion.js"></script>
+<script src="plugin/record.js"></script>
+<script src="plugin/version.js"></script>
 </body>
 </html>
