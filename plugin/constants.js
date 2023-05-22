@@ -1,0 +1,1 @@
+const CURRENTVERSION = '1.0';
