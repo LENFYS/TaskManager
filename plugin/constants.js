@@ -1,2 +1,2 @@
 const URL = 'https://lenfys.github.io/TaskManager/';
-const CURRENTVERSION = '1.1';
+const CURRENTVERSION = '/ v1.2';

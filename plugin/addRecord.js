@@ -22,12 +22,14 @@ function add() {
         const newTask = document.createElement('td');
         const newTaskType = document.createElement('td');
         const newUser = document.createElement('td');
+        const newAction = document.createElement('td');
         const deleteButton = document.createElement('button'); // Создание кнопки удаления
         deleteButton.textContent = 'Remove'; // Текст на кнопке
         deleteButton.addEventListener('click', () => { // Обработчик клика на кнопку удаления
-          const rowIndex = tasksArray.indexOf(newTr);
-          tasksArray.splice(rowIndex, 1); // Удаляем строку из массива задач
-          updateTable(); // Обновляем таблицу
+        deleteButton.classList.add('delete-button');
+        const rowIndex = tasksArray.indexOf(newTr);
+        tasksArray.splice(rowIndex, 1); // Удаляем строку из массива задач
+        updateTable(); // Обновляем таблицу
         });
         newTask.textContent = cell;
         newTaskType.textContent = cell2;
@@ -36,7 +38,8 @@ function add() {
         newTr.appendChild(newTask);
         newTr.appendChild(newTaskType);
         newTr.appendChild(newUser);
-        newTr.appendChild(deleteButton); // Добавляем кнопку удаления в конец строки
+        newTr.appendChild(newAction)
+        newAction.appendChild(deleteButton)
         tasksArray.push(newTr); // Добавляем строку в массив задач
       }
       sortTasks(); // Сортируем задачи

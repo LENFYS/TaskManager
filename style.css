@@ -1,84 +1,89 @@
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px;
+body {
+  background-color: #1e1e1e; /* Dark background color */
+  color: #c9d1d9; /* Light text color */
+  font-family: Arial, sans-serif;
 }
+
 .forma {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+  margin: 20px;
+}
+
+input[type="text"],
+select {
+  background-color: #2d333b; /* Dark input background color */
+  color: #c9d1d9; /* Light input text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px; /* Increased padding for a bigger appearance */
+  margin-right: 10px;
+  width: 600px; /* Increased width to 600px */
+}
+
+button {
+  background-color: #f1f1f1; /* Button background color */
+  color: #141212; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #30363d; /* Table border color */
+}
+
+th {
+  background-color: #161b22; /* Table header background color */
+  color: #c9d1d9; /* Table header text color */
+}
+
+tr:nth-child(even) {
+  background-color: #21262d; /* Table even row background color */
+}
+
+tr:hover {
+  background-color: #32383f; /* Table row hover background color */
+}
+
+#tasks {
+  margin-top: 20px;
+}
+
+#task {
+  width: 950px; /* Increased width to 750px */
+}
+
+#select1,
+#select2 {
+  width: 200px; /* Increased width to 300px */
+}
+
+@media (max-width: 768px) {
+  .forma {
+      flex-wrap: wrap;
   }
   
   input[type="text"],
   select {
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
+      width: 100%;
+      margin-bottom: 10px;
   }
-  
-  input[type="text"] {
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  select {
-    width: 150px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4caf50;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
 
-table {
-    margin-top: 50px;
-    border-collapse: collapse;
-    width: 1400px;
-    max-width: 1400px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+  button {
+      width: 100%;
   }
   
-  th,
-  td {
-    padding: 10px;
-    text-align: left;
-    vertical-align: top;
-    border: 1px solid #ccc;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    width: 300px;
-    max-width: 300px;
-    
+  #task {
+      width: 100%;
   }
-  
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    width: 300px;
-    max-width: 300px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+}
