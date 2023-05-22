@@ -9,26 +9,26 @@
 </head>
 <body>
     <form class="forma">
-        <input type="text" placeholder="Введи задачу, а далее укажи уровень ее прогресса и пользователя, затем нажми добавить." id="task">
+        <input type="text" placeholder="Enter your task, after enter task progress and pin the user." id="task">
         <select id='select1'>
-            <option value="" disabled selected>Пусто</option>
-            <option value="Сделать">Сделать</option>
-            <option value="В процессе">В процессе</option>
-            <option value="Готово">Готово</option>
+            <option value="" disabled selected>Empty</option>
+            <option value="To Do">To Do</option>
+            <option value="In progress">In progress</option>
+            <option value="Done">Done</option>
         </select>
         <select id='select2'>
-            <option value="Все">Все</option>
-            <option value="LENFYS">LENFYS</option>
-            <option value="Тима">Тима</option>
+            <option value="@all">Everyone</option>
+            <option value="Nikita Tsyvlin">Nikita Tsyvlin</option>
+            <option value="Nikita Zhaldybin">Nikita Zhaldybin</option>
         </select>
-        <button onclick="add()">Добавить</button>
+        <button onclick="add()">Add</button>
     </form>
 
     <table id="tasks">
         <tr>
-            <th>Задание</th>
-            <th>Прогресс</th>
-            <th>Пользователь</th>
+            <th>Task</th>
+            <th>Progress</th>
+            <th>User</th>
         </tr>
         
     </table>
